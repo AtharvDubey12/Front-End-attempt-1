@@ -831,6 +831,7 @@ html,body{
     align-items: center;
     translate: 0px 250px; 
     position: relative;
+    flex-wrap: wrap;
 }
 #manual-cont{
     height: 500px;
