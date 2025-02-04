@@ -831,6 +831,7 @@ html,body{
     translate: 0px 250px; 
     position: relative;
     flex-wrap: wrap;
+    overflow-y: auto;
 }
 #manual-cont{
     height: 500px;
