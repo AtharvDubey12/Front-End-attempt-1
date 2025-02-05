@@ -915,6 +915,7 @@ html,body{
     }
     #nav-exp-const{
         display:none;
+        translate: 0px -200px;
     }
     #mobile-nav{
         display: flex;
