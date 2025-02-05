@@ -913,6 +913,9 @@ html,body{
     #nav-bar{
         display: none;
     }
+    #nav-exp-const{
+        display:none;
+    }
     #mobile-nav{
         display: flex;
     }
