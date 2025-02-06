@@ -9,7 +9,13 @@ const biosexp= document.getElementById("bios-exp");
 const donateexp= document.getElementById("donate-exp");
 const slideIds= ["rating1-1", "rating1-2", "rating1-3"];
 const imageIds= ["littleign", "littlemeta", "littlegs"];
+const leftside= document.getElementById('left-mob-cont');
+const sidebar= document.getElementById('mobsidebar-cont');
 const ratingIds= ['r1','r2','r3'];
+const mobham1= document.getElementById('mob-ham-show1');
+const mobham2= document.getElementById('mob-ham-show3');
+const srchmob= document.getElementById('right-mob-cont');
+const contmobsrc= document.getElementById('mob-srch'); 
 let currentIndex=0;
 
 
@@ -182,3 +188,20 @@ function onPlayerStateChange(event){
         videoContainer2.style.opacity="0";
     }
 }
+
+leftside.addEventListener("mouseenter", ()=> {
+    sidebar.style.transform= "translateX(100%)";
+    mobham1.style.transform= "translateY(5px)";
+    mobham2.style.transform= "translateY(-5px)";
+});
+leftside.addEventListener("click", ()=>{
+    sidebar.style.transform= "translateX(0)";
+    mobham1.style.transform= "translateY(0px)";
+    mobham2.style.transform= "translateY(0px)";
+});
+srchmob.addEventListener("mouseenter", ()=> {
+    contmobsrc.style.transform= "translateY(60px)";
+});
+srchmob.addEventListener("click", ()=>{
+    contmobsrc.style.transform= "translateY(0)";
+});

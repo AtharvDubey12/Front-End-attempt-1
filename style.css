@@ -881,10 +881,11 @@ html,body{
     height: 40px;
     width: 100%;
     background-color: rgb(255,255,255,0.8);
-    z-index: 111;
+    z-index: 99;
     display: none;
     justify-content: space-between;
     backdrop-filter: blur(12px);
+    box-shadow: 0px 0px 10px
 }
 #left-mob-cont{
     height: 100%;
@@ -913,11 +914,10 @@ html,body{
     #nav-bar{
         display: none;
     }
-    #nav-exp-const{
-        display:none;
-        translate: 0px -200px;
-    }
     #mobile-nav{
+        display: flex;
+    }
+    #sidewrapper{
         display: flex;
     }
 }
@@ -928,12 +928,14 @@ html,body{
     background-color: black;
     translate: 0px -3px;
     border-radius: 2px;
+    transition: all 500ms;
 }
 #mob-ham-show2{
     width: 20px;
     height: 1px;
     background-color: black;
     border-radius: 2px;
+    transition: all 500ms;
 }
 #mob-ham-show3{
     width: 20px;
@@ -948,4 +950,64 @@ html,body{
 }
 #searchlog{
     transition: all 500ms;
+}
+#mobsidebar-cont{
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    bottom: 0;
+    z-index: 98;
+    overflow: hidden;
+}
+#sideleft{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#sideright{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255,255,255,0.5);
+    backdrop-filter: blur(15px);
+}
+#sidewrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#halfsideleft{
+    width: 40%;
+    border-right: 1px solid gray;
+    height: 90%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+#mobsidebar-cont{
+    translate: -100%;
+    transition: transform 50ms;
+}
+#mob-srch{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255,255,255,0.1);
+    backdrop-filter: blur(11px);
+    top: 40px;
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 0px -60px;
+    transition: all 400ms;
+}
+#srch-mob-bar{
+    background-color: rgb(215, 215, 215);
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 10px;
 }
