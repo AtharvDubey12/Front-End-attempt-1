@@ -189,19 +189,22 @@ function onPlayerStateChange(event){
     }
 }
 
-leftside.addEventListener("mouseenter", ()=> {
+leftside.addEventListener("click", ()=>{
     sidebar.style.transform= "translateX(100%)";
     mobham1.style.transform= "translateY(5px)";
     mobham2.style.transform= "translateY(-5px)";
 });
-leftside.addEventListener("click", ()=>{
+leftside.addEventListener("mouseenter", ()=>{
     sidebar.style.transform= "translateX(0)";
     mobham1.style.transform= "translateY(0px)";
     mobham2.style.transform= "translateY(0px)";
 });
-srchmob.addEventListener("mouseenter", ()=> {
+
+
+
+srchmob.addEventListener("click", ()=> {
     contmobsrc.style.transform= "translateY(60px)";
 });
-srchmob.addEventListener("click", ()=>{
+srchmob.addEventListener("mouseenter", ()=>{
     contmobsrc.style.transform= "translateY(0)";
 });
