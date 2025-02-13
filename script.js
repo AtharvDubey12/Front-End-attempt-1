@@ -201,10 +201,15 @@ leftside.addEventListener("mouseenter", ()=>{
 });
 
 
-
+let mobtrigger=0;
 srchmob.addEventListener("click", ()=> {
+    if(!mobtrigger){
     contmobsrc.style.transform= "translateY(60px)";
-});
-srchmob.addEventListener("mouseenter", ()=>{
-    contmobsrc.style.transform= "translateY(0)";
+    mobtrigger=1;
+    }
+    else{
+        mobtrigger=0;
+        contmobsrc.style.transform= "translateY(0px)";
+    }
+    
 });
