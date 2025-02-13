@@ -201,7 +201,7 @@ leftside.addEventListener("mouseenter", ()=>{
 });
 
 
-let mobtrigger=0;
+let mobtrigger=false;
 srchmob.addEventListener("click", ()=> {
     if(!mobtrigger){
     contmobsrc.style.transform= "translateY(60px)";
