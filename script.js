@@ -188,16 +188,19 @@ function onPlayerStateChange(event){
         videoContainer2.style.opacity="0";
     }
 }
-
+let mobtriggerside=false;
 leftside.addEventListener("click", ()=>{
+    if(!mobtriggerside){
     sidebar.style.transform= "translateX(100%)";
     mobham1.style.transform= "translateY(5px)";
     mobham2.style.transform= "translateY(-5px)";
-});
-leftside.addEventListener("mouseenter", ()=>{
-    sidebar.style.transform= "translateX(0)";
-    mobham1.style.transform= "translateY(0px)";
-    mobham2.style.transform= "translateY(0px)";
+    }
+    else{
+        sidebar.style.transform= "translateX(0%)";
+        mobham1.style.transform= "translateY(0px)";
+        mobham1.style.transform= "translateY(0px)";
+    }
+    mobtriggerside= !mobtriggerside;
 });
 
 
