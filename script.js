@@ -205,11 +205,10 @@ let mobtrigger=0;
 srchmob.addEventListener("click", ()=> {
     if(!mobtrigger){
     contmobsrc.style.transform= "translateY(60px)";
-    mobtrigger=1;
     }
     else{
-        mobtrigger=0;
         contmobsrc.style.transform= "translateY(0px)";
     }
+    mobtrigger= !mobtrigger;
     
 });
