@@ -196,9 +196,9 @@ leftside.addEventListener("click", ()=>{
     mobham2.style.transform= "translateY(-5px)";
     }
     else{
-        sidebar.style.transform= "translateX(-100%)";
-        mobham1.style.transform= "translateY(-5px)";
-        mobham1.style.transform= "translateY(5px)";
+        sidebar.style.transform= "translateX(0px)";
+        mobham1.style.transform= "translateY(0px)";
+        mobham1.style.transform= "translateY(0px)";
     }
     mobtriggerside= !mobtriggerside;
 });
